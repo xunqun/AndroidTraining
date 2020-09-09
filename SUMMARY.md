@@ -1,4 +1,10 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [Introduction](README.md)
+* [Develop environment](develop-environment.md)
+* [Hello Android](hello-android.md)
+* [Kotlin I](kotlin-i.md)
+* [Kotlin II](kotlin-ii.md)
+* [Kotlin III](kotlin-iii.md)
+* [View and Layout](view-and-layout.md)
 
