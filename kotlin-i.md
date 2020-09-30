@@ -175,3 +175,74 @@ println(x == 2)
 [^1]: [Kotlin Basic Types](https://kotlinlang.org/docs/reference/basic-types.html#numbers)
 [^2]: [Kotlin Standard Library](https://kotlinlang.org/api/latest/jvm/stdlib/)
 [^3]: [Kotlin Default Import](https://kotlinlang.org/docs/reference/packages.html#default-imports)
+
+## 字串樣板 (String template)
+
+```kotlin
+var a = 1
+// simple name in template:
+val s1 = "a is $a" 
+
+a = 2
+// arbitrary expression in template:
+val s2 = "${s1.replace("is", "was")}, but now is $a"*‌*
+```
+
+## 條件
+### if ... else ...
+```kotlin
+fun maxOf(a: Int, b: Int): Int {
+    if (a > b) {
+        return a
+    } else {
+        return b
+    }
+}
+```
+
+```kotlin
+fun maxOf(a: Int, b: Int) = if (a > b) a else b
+```
+
+## 空值
+
+允許回傳空值
+
+```kotlin
+fun parseInt(str: String): Int? {
+    // ...
+}
+```
+
+> 需要針對可能空值的變數進行檢查，比避免發生程式崩潰
+
+```kotlin
+fun printProduct(arg1: String, arg2: String) {
+    val x = parseInt(arg1)
+    val y = parseInt(arg2)
+
+    // Using `x * y` yields error because they may hold nulls.
+    if (x != null && y != null) {
+        // x and y are automatically cast to non-nullable after null check
+        println(x * y)
+    }
+    else {
+        println("'$arg1' or '$arg2' is not a number")
+    }    
+}
+```
+
+## 檢查型態
+
+```kotlin
+fun getStringLength(obj: Any): Int? {
+    if (obj is String) {
+        // `obj` is automatically cast to `String` in this branch
+        return obj.length
+    }
+
+    // `obj` is still of type `Any` outside of the type-checked branch
+    return null
+}
+```
+
