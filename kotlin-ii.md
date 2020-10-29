@@ -97,6 +97,16 @@ do {
 
 ### Break and Continue Labels
 
+Beark 和Continue 通常使用在 for當中，用來略過一次某次迭代，或直接結束迴圈
+
+```kotlin
+for (i in 1..100) {
+    if (i % 2 == 1) continue 
+    ...
+}
+```
+
+
 ```kotlin
 loop@ for (i in 1..100) {
     for (j in 1..100) {
@@ -105,4 +115,15 @@ loop@ for (i in 1..100) {
 }
 ```
 
+Return
+
+```kotlin
+fun foo() {
+    listOf(1, 2, 3, 4, 5).forEach {
+        if (it == 3) return // non-local return directly to the caller of foo()
+        print(it)
+    }
+    println("this point is unreachable")
+}
+```
 - **挑戰，寫一個函式，可以回傳兩個整數值的最大公因數**

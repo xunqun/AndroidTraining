@@ -206,7 +206,7 @@ fun maxOf(a: Int, b: Int) = if (a > b) a else b
 
 ## 空值
 
-允許回傳空值
+> 允許回傳空值
 
 ```kotlin
 fun parseInt(str: String): Int? {
