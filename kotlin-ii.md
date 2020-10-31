@@ -1,5 +1,6 @@
 # Kotlin II
 
+{{TOC}}
 
 ## 條件控制
 

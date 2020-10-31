@@ -246,3 +246,7 @@ fun getStringLength(obj: Any): Int? {
 }
 ```
 
+# 實作篇
+
+
+

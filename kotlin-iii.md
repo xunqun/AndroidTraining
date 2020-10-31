@@ -140,3 +140,60 @@ class Derived(p: Int) : Base(p){
 	...
 }
 ```
+
+Function override
+
+```kotlin
+open class Shape {
+    open fun draw() { /*...*/ }
+    fun fill() { /*...*/ }
+}
+
+class Circle() : Shape() {
+    override fun draw() { /*...*/ }
+}
+```
+
+Properties override
+
+You can also override a val property with a var property, but not vice versa. This is allowed because a val property essentially declares a get method, and overriding it as a var additionally declares a set method in the derived class.
+
+```kotlin
+open class Shape {
+    open val vertexCount: Int = 0
+}
+
+class Rectangle : Shape() {
+    override val vertexCount = 4
+}
+```
+
+Calling the superclass implementation
+
+```kotlin
+open class Rectangle {
+    open fun draw() { println("Drawing a rectangle") }
+    val borderColor: String get() = "black"
+}
+
+class FilledRectangle : Rectangle() {
+    override fun draw() {
+        super.draw()
+        println("Filling the rectangle")
+    }
+
+    val fillColor: String get() = super.borderColor
+}
+```
+
+Abstract classes
+
+```kotlin
+open class Polygon {
+    open fun draw() {}
+}
+
+abstract class Rectangle : Polygon() {
+    abstract override fun draw()
+}
+```
