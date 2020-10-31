@@ -1,6 +1,6 @@
 package com.whiles.lessons
 
-class Role(val name: String, val age: Int) {
+abstract class Role(val name: String, val age: Int) {
 
     enum class Classes(val cname: String){
         Novice("初心者"), Swordman("劍士"), Mage("魔法師"), Archer("弓箭手"), Thief("盜賊")
@@ -26,4 +26,11 @@ class Role(val name: String, val age: Int) {
      */
     var int: Int = 0
 
+
+    var hp: Int = 60
+
+
+    abstract fun greeting()
+    abstract fun attack(role: Role)
+    abstract fun injured(value: Int)
 }

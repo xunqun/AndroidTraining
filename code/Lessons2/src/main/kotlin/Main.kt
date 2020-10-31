@@ -8,13 +8,16 @@ fun main() {
     val info = askBasicInformation()
     val ability = rollDiceForAbility()
 
-    val hero = Role(info[0], info[1].toInt()).apply {
+    val hero = Player(info[0], info[1].toInt()).apply {
         str = ability[0]
         dex = ability[1]
         int = ability[2]
     }
 
     showState(hero)
+
+    val npc = Npc("哥布林", 1)
+    hero.attack(npc)
 }
 
 fun showState(role: Role) {
