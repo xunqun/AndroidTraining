@@ -4,6 +4,8 @@
 
 ### 類別(Class)
 
+物件的製作藍圖
+
 ```kotlin
 class Person { 
 

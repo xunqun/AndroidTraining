@@ -10,6 +10,8 @@ description: 變數、函式、型態、判斷
 
 參考範例 Lessons/src/main/kotlin/kotlin_I.py
 
+---
+
 ## Kotlin 程式檔
 
 ```kotlin
@@ -28,6 +30,8 @@ class Message { /*...*/ }
 	- https://kotlinlang.org/api/latest/jvm/stdlib/
 - fun main()
 	- 主要程式進入點
+
+---
 
 ## 變數 (Variable)
 
