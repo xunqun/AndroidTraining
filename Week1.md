@@ -37,13 +37,14 @@
 
 ### The Manifest file 及其用途
 
+位置在:
+ [專案]/app/src/main/AndroidManifest.xml
+
 1. 宣告用到的使用者權限
-
 2. ~~宣告 minimum API Level~~
-
 3. 宣告硬體規格需求(前後相機鏡頭、藍芽、多點觸控)
-
 4. 宣告用到的外部程式庫參數
+5. 宣告App使用到的元件，包含Android的四大元件
 
 ```xml
 <manifest ... >
@@ -54,7 +55,7 @@
 </manifest>
 ```
 
-5. 宣告App使用到的元件，包含Android的四大元件
+Android 四大元件包含Activity, Service, Broadcast Receiver 和 Content Provider
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -71,6 +72,19 @@
     </application>
 </manifest>
 ```
+
+- \<activity\> elements for activities.
+- \<service\> elements for services.
+- \<receiver\> elements for broadcast receivers.
+- \<provider\> elements for content providers.
+
+#### Intent 和 Intent filter
+
+Android App 允許系統中其他App可以呼叫其他App，支援相關動作的元件。例如，我需要寄電子郵件時，可以呼叫其他支援電子郵件的App來幫忙處理寄件。
+
+在實務上就是丟出一個Intent，尋求可以支援寄送的Activity來幫忙。
+
+Android App中的Activity
 
 Web reference: [https://developer.android.com/guide/components/fundamentals](https://developer.android.com/guide/components/fundamentals)
 
