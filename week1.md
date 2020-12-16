@@ -214,7 +214,11 @@ App 資源包含了圖片、聲音、多國語言字串、動畫設定、排版�
 
 Web reference: [https://developer.android.com/guide/topics/resources/providing-resources](https://developer.android.com/guide/topics/resources/providing-resources)
 
-### build.gradle file
+
+
+## Build Process
+
+當按下執行後，發生了什麼事？
 
 
 
