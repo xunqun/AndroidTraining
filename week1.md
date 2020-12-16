@@ -87,6 +87,10 @@ Web reference: [https://developer.android.com/guide/components/fundamentals](htt
 
 App 資源包含了圖片、聲音、多國語言字串、動畫設定、排版設定、顏色設定、風格、外部字型等。將資源檔分開將有助於管理提供不同類型的資源或修改不同的風格，而不需要動到程式碼。
 
+
+
+不能直接將檔案存在/res/底下，會造成編譯錯誤
+
 \*\*\*\*
 
 <table>
