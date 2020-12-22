@@ -59,7 +59,13 @@
 
 Feature reference list [https://developer.android.com/guide/topics/manifest/uses-feature-element\#features-reference](https://developer.android.com/guide/topics/manifest/uses-feature-element#features-reference)
 
+🚩 **&lt;uses-sdk android:minSdkVersion="7" android:targetSdkVersion="19" /&gt;**
 
+宣告使用的sdk版本，以及最低支援版本，此設定會被build.gradle中的設定給覆蓋，所以現在不需要將版本設定放在AndroidManifest.xml當中
+
+🚩 **&lt;uses-permission android:name="android.permission.SEND\_SMS"/&gt;**
+
+宣告所使用到的權限。用以規範受限制的權限和行為。當開發App時，需要避免宣告為使用到的權限
 
 Android 四大元件包含Activity, Service, Broadcast Receiver 和 Content Provider
 
