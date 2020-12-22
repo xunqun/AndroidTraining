@@ -65,15 +65,32 @@ Feature reference list [https://developer.android.com/guide/topics/manifest/uses
 
 🚩 **&lt;uses-permission android:name="android.permission.SEND\_SMS"/&gt;**
 
-宣告所使用到的權限。用以規範受限制的權限和行為。當開發App時，需要避免宣告為使用到的權限
+宣告所使用到的權限。用以規範受限制的權限和行為。當開發App時，需要避免宣告為使用到的權限。
 
+權限又分為安裝階段權限\(Install-time permissions\)和運行階段權限\(Runtime permission\)，一般權限宣告在AndroidManifest當中，而Runtime Permission則在App運行過程中，詢問使用者是否答應開啟權限。Runtime Permission 用在處理危險等級的權限。
 
+{% hint style="info" %}
+還有一種Special permissions，一般開發者不會碰到，是OEM廠商或平台開發者才用得到
+{% endhint %}
+
+![](.gitbook/assets/workflow-overview.svg)
+
+Reference :
+
+\[1\] [App permission best practices](https://developer.android.com/training/permissions/usage-notes)
+
+\[2\] [Manifest.Permission](https://developer.android.com/reference/android/Manifest.permission)
 
 ```markup
 <?xml version="1.0" encoding="utf-8"?>
 <manifest ... >
     ...
-    <application ... >
+    <application android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
         <activity android:name="com.example.project.ComposeEmailActivity">
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
@@ -87,7 +104,9 @@ Feature reference list [https://developer.android.com/guide/topics/manifest/uses
 
 🚩 **&lt;application ...&gt;**
 
-Android 四大元件包含Activity, Service, Broadcast Receiver 和 Content Provider
+屬性包含了android:icon宣告了App 的圖示，android:label宣告了App名稱等重要訊息
+
+其中，宣告了App所使用到的Android四大元件，Android 四大元件包含Activity, Service, Broadcast Receiver 和 Content Provider
 
 * &lt;activity&gt; elements for activities.
 * &lt;service&gt; elements for services.
@@ -175,9 +194,18 @@ Web reference: [https://developer.android.com/guide/topics/resources/providing-r
 
 ## Build Process
 
-當按下執行後，發生了什麼事？
+### 在虛擬機器上執行App
 
+選擇剛剛建立的虛擬機器，當按下執行在虛擬機器上執行我們的App，嘗試下列操作
 
+1. 安裝/更新Google Play
+2. 旋轉畫面
+3. 畫面拍照、錄影
+
+### 在手機裝置上執行App
+
+1. 在裝置上開啟開發者選項，參考[設定方式](https://developer.android.com/studio/debug/dev-options) ，並開啟USB偵錯
+2. 在Windows電腦上，幫ADB安裝USB驅動程式，參考[安裝方式](https://developer.android.com/studio/run/device)，MAC電腦不需要安裝
 
 
 
