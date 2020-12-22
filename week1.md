@@ -67,7 +67,7 @@ Feature reference list [https://developer.android.com/guide/topics/manifest/uses
 
 宣告所使用到的權限。用以規範受限制的權限和行為。當開發App時，需要避免宣告為使用到的權限
 
-Android 四大元件包含Activity, Service, Broadcast Receiver 和 Content Provider
+
 
 ```markup
 <?xml version="1.0" encoding="utf-8"?>
@@ -84,6 +84,10 @@ Android 四大元件包含Activity, Service, Broadcast Receiver 和 Content Prov
     </application>
 </manifest>
 ```
+
+🚩 **&lt;application ...&gt;**
+
+Android 四大元件包含Activity, Service, Broadcast Receiver 和 Content Provider
 
 * &lt;activity&gt; elements for activities.
 * &lt;service&gt; elements for services.
