@@ -1,4 +1,4 @@
-# Android與Kotlin語言簡介
+# \#1 Android與Kotlin語言簡介
 
 ## 安裝 Android Studio
 
@@ -192,7 +192,7 @@ Web reference: [https://developer.android.com/guide/topics/resources/providing-r
 
 
 
-## Build Process
+## Build Process & Run
 
 ### 在虛擬機器上執行App
 
