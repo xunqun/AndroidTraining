@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [\#1 Android與Kotlin語言簡介](week1.md)
 * [\#2 認識Android開發環境](week2.md)
-* [介面排版與變數運算](jie-mian-pai-ban-yu-bian-shu-yun-suan.md)
+* [\#3 介面排版與變數運算](jie-mian-pai-ban-yu-bian-shu-yun-suan.md)
 * [Kotlin條件判斷與迴圈](kotlin-tiao-jian-pan-duan-yu-hui-quan.md)
 * [Kotlin物件導向程式設計1](kotlin-wu-jian-dao-xiang-cheng-shi-she-ji-1.md)
 * [Kotlin物件導向程式設計2](kotlin-wu-jian-dao-xiang-cheng-shi-she-ji-2.md)
