@@ -44,7 +44,8 @@ Android App的圖示設定在 *\[專案\]/app/src/main/AndroidManifest.xml*  當
 
 Android 8.0 (API 26) 引入了自適應啟動圖標功能，他可以在不同設備上，顯示不同形狀。
 
-![](./images/week2/NB_Icon_Mask_Shapes_Ext_01.gif)
+![](./images/week2/NB_Icon_Layers_3D_03_ext.gif)
+
 
 ### 字串文件，/res/value/strings.xml
 

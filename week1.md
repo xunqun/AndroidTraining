@@ -12,19 +12,19 @@
 
 1. 點擊按鈕 Create New Project 來新增一個專案
 
-![Welcome screen](.gitbook/assets/welcome.png)
+![Welcome screen](./images/week1/welcome.png)
 
 1. 選擇 Empty Activity範本
 
-![Welcome screen](.gitbook/assets/select-template.png)
+![Welcome screen](./images/week1/select-template.png)
 
 1. 仔細端詳 Android Studio 開發環境
 
-![Welcome screen](.gitbook/assets/empty_activity.png)
+![Welcome screen](./images/week1/empty_activity.png)
 
 ## 安裝虛擬機器
 
-1. 上方工具列按下AVD Manager按鈕 ![Alt text](.gitbook/assets/avd-manager.png)，建立虛擬裝置
+1. 上方工具列按下AVD Manager按鈕 ![Alt text](./images/week1/avd-manager.png)，建立虛擬裝置
 2. 按下 Create Viretual Device 選擇虛擬裝置大小和版本 \(需要時間下載Android版本\)
 3. 啟動虛擬機器
 4. 在Android Studio 執行剛剛所建立的專案
@@ -73,7 +73,7 @@ Feature reference list [https://developer.android.com/guide/topics/manifest/uses
 還有一種Special permissions，一般開發者不會碰到，是OEM廠商或平台開發者才用得到
 {% endhint %}
 
-![](.gitbook/assets/workflow-overview.svg)
+![](./images/week1/workflow-overview.svg)
 
 Reference :
 
