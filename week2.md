@@ -31,8 +31,7 @@ Android App的圖示設定在 *\[專案\]/app/src/main/AndroidManifest.xml*  當
 
 為了在不同解析度的裝置中，能夠使用不同的圖來展示，以避免出現鋸齒的情況，我們在提供圖示的時候，會提供幾個基本的size
 
-![Low pixel vs. high pixel](./images/week2/games_img004.jpg)
-
+![Low pixel vs. high pixel](./images/week2/Games_img004.jpg)
 
 |:--|:--|:--|
 | mdpi: | 48px x 48px | (1x)| 
@@ -109,6 +108,43 @@ Android App的名稱設定在 *\[專案\]/app/src/main/AndroidManifest.xml*  當
 
 
 ## 排版編輯工具
+
+### 排版文件，/res/layout/activity_main.xml
+
+開啟排版文件同時，會開啟排版編輯器。
+
+![](./images/week2/layout-editor.png)
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+```
+
+🚩 **ConstraintLayout**
+
+
+### 布局
+
+在排版檔案當中，會使用到兩種類型的元素，View和ViewGroup。View是基本元件，如Button、TextView等。ViewGroup則提供不同的佈局結構來容納多個View或是ViewGroup，如LinearLayout、ConstraintLayout等(ViewGroup皆取名為xxxLayout)
+
+![](./images/week2/viewgroup_2x.png)
+
 
 ### Widget: TextView、Button、ImageView
 
