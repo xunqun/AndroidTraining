@@ -2,12 +2,13 @@
 
 ## 修改圖示與App名稱
 
-Android App的圖示設定在 *\[專案\]/app/src/main/AndroidManifest.xml*  當中，圖示通常放置在 *\[專案\]/app/src/main/res/mipmap/* 底下
+Android App的圖示設定在 *\[專案\]/app/src/main/AndroidManifest.xml*  當中，圖示通常放置在 */res/mipmap/* 底下
 
 ```markup
 <application
         ...
         android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
         >
                 ...
 </application>
@@ -40,6 +41,17 @@ Android App的圖示設定在 *\[專案\]/app/src/main/AndroidManifest.xml*  當
 | xxhdpi:|   144px x 144px | (3x)|
 | xxxhdpi:|  192px x 192px | (4x) |
 
+#### 建立資源資料夾工具
+
+drawable或mipmap資料夾，可以在資料夾名稱中加上綴字，已宣告合適適用的國家、語言、解析度、旋轉方向
+
+Android Studio提供了建立資源資料夾工具，來協助開發者建立不同需求的資料夾。開啟建立資源資料夾工具時，可以由選擇[專案]/app/資料夾後，單擊右鍵選擇New/Android resource directory 來開啟資料夾工具。
+
+![](./images/week2/new_res_dir.png) 
+
+> 沒有綴詞的資料夾，為預設資料夾，當系統在有綴字的資料夾都找不到合適的資源時，就會使用預設資料夾當中的資源
+
+
 #### 自適應圖示
 
 Android 8.0 (API 26) 引入了自適應啟動圖標功能，他可以在不同設備上，顯示不同形狀，以適應不同OEM廠商的不同圖示遮罩
@@ -67,7 +79,34 @@ Android 8.0 (API 26) 引入了自適應啟動圖標功能，他可以在不同�
 
 ### 字串文件，/res/value/strings.xml
 
+Android App的名稱設定在 *\[專案\]/app/src/main/AndroidManifest.xml*  當中，指定字串通常放置在 *\/res/values/strings.xml* 底下
+
+```markup
+<application
+        ...
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        >
+                ...
+</application>
+```
+
+在strings.xml當中修改所對應App名稱的字串，就能修改其名稱。(需要重新安裝App)
+
+```xml
+<resources>
+    <string name="app_name">Week1</string>
+</resources>
+```
+
 #### 處理多國語言
+
+/res/values/ 和drawable或mipmap資料夾一樣，可以在資料夾使用資源資料夾工具，來幫資料夾名稱中加上適合的綴字，已提供合適不同的國家、語言、解析度、旋轉方向等相對應的資源。
+
+試著建立一個用於台灣的繁體中文資源資料夾，建立完成後/res/資料夾當中會出現一個/values-zh-rTW的資料夾，我們可以在裡面新增一個strings.xml來放置中文的字串資源。讓中文使用者裝置中，看到的是中文的App名稱，以及中文內容。
+
+![](./images/week2/new_res_dir_zh.png)
+
 
 ## 排版編輯工具
 

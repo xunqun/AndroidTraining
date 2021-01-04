@@ -10,17 +10,18 @@
 
 ## 建立第一個專案
 
-1. 點擊按鈕 Create New Project 來新增一個專案
+點擊按鈕 Create New Project 來新增一個專案，並在選擇範本頁面選擇空白範本，建立完後，畫面會來到Android Studio主畫面
 
 ![Welcome screen](./images/week1/welcome.png)
+![選擇 Empty Activity範本](./images/week1/select-template.png)
+![Android Studio 主畫面](./images/week1/main-window_2-2_2x.png)
 
-1. 選擇 Empty Activity範本
-
-![Welcome screen](./images/week1/select-template.png)
-
-1. 仔細端詳 Android Studio 開發環境
-
-![Welcome screen](./images/week1/empty_activity.png)
+1. 工具欄
+2. 導航欄
+3. 編輯器視窗
+4. 工具視窗欄
+5. 工具視窗
+6. 狀態欄
 
 ## 安裝虛擬機器
 
