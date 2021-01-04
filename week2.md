@@ -2,6 +2,7 @@
 
 ## 修改圖示與App名稱
 
+
 ### 圖示文件，/res/drawable，/res/mipmap
 
 #### Android 單位/解析度概念
