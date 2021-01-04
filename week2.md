@@ -24,9 +24,19 @@ Android App的圖示設定在 *\[專案\]/app/src/main/AndroidManifest.xml*  當
 
 #### Android 單位/解析度概念
 
+觀察drawable和mipmap資料夾，會發現後面除了mipmap還有解析度定義， 例如: res/mipmap-hdpi
+
+為了在不同解析度的裝置中，能夠使用不同的圖來展示，以避免出現鋸齒的情況，我們在提供圖示的時候，會提供幾個基本的size
+
 ![Low pixel vs. high pixel](./images/week2/games_img004.jpg)
 
 
+|:--|:--|:--|
+| mdpi: | 48px x 48px | (1x)| 
+| hdpi: | 72px x 72px | (1.5x)|
+| xhdpi:| 96px x 96px | (2x) |
+| xxhdpi:|   144px x 144px | (3x)|
+| xxxhdpi:|  192px x 192px | (4x) |
 
 #### 建立圖示工具，向量與點陣圖示
 
