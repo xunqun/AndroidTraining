@@ -20,6 +20,8 @@ Android App的圖示設定在 *\[專案\]/app/src/main/AndroidManifest.xml*  當
 
 > 為了加快彩現速度和減少圖像鋸齒，貼圖被處理成由一系列被預先計算和最佳化過的圖片組成的檔案,這樣的貼圖被稱為 MIP map 或者 mipmap
 
+使用Image Asset Studio來產生圖示，開啟Asset Studio的方式為，點選模組資料夾([專案]/app)點滑鼠右鍵，選擇 New/ImageAsset
+
 ![Image asset](./images/week2/imageasset.png)
 
 #### Android 單位/解析度概念
@@ -38,7 +40,11 @@ Android App的圖示設定在 *\[專案\]/app/src/main/AndroidManifest.xml*  當
 | xxhdpi:|   144px x 144px | (3x)|
 | xxxhdpi:|  192px x 192px | (4x) |
 
-#### 建立圖示工具，向量與點陣圖示
+#### 自適應圖示
+
+Android 8.0 (API 26) 引入了自適應啟動圖標功能，他可以在不同設備上，顯示不同形狀。
+
+![](./images/week2/NB_Icon_Mask_Shapes_Ext_01.gif)
 
 ### 字串文件，/res/value/strings.xml
 
