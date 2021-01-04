@@ -42,10 +42,28 @@ Android App的圖示設定在 *\[專案\]/app/src/main/AndroidManifest.xml*  當
 
 #### 自適應圖示
 
-Android 8.0 (API 26) 引入了自適應啟動圖標功能，他可以在不同設備上，顯示不同形狀。
+Android 8.0 (API 26) 引入了自適應啟動圖標功能，他可以在不同設備上，顯示不同形狀，以適應不同OEM廠商的不同圖示遮罩
 
 ![](./images/week2/NB_Icon_Layers_3D_03_ext.gif)
 
+在更早的版本中，Launcher圖示的大小為48dp x 48dp，現在則必須提供兩個圖層的圖示：
+1. 兩個圖層大小為108dp x 108dp
+2. 已屏蔽的視口顯示為72dp x 72dp
+3. 系統為4個面中每一面的外層保留18dp以創建有趣的視覺效果
+
+![](./images/week2/Single_Icon_Parallax_Demo_01_2x_ext.gif)
+
+參考文件[https://developer.android.com/guide/practices/ui_guidelines/icon_design_adaptive](https://developer.android.com/guide/practices/ui_guidelines/icon_design_adaptive)
+
+創建資源在*res/mipmap-anydpi-v26/ic_launcher.xml* 中，以便用於Android 8.0(API26)以上
+
+```xml
+ <?xml version="1.0" encoding="utf-8"?>
+    <adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+        <background android:drawable="@drawable/ic_launcher_background" />
+        <foreground android:drawable="@drawable/ic_launcher_foreground" />
+    </adaptive-icon>
+```
 
 ### 字串文件，/res/value/strings.xml
 
