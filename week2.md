@@ -2,12 +2,27 @@
 
 ## 修改圖示與App名稱
 
+Android App的圖示設定在 *\[專案\]/app/src/main/AndroidManifest.xml*  當中，圖示通常放置在 *\[專案\]/app/src/main/mipmap/* 底下
 
-![Image asset](./images/week2/imageasset.png)
+```markup
+<application
+        ...
+        android:icon="@mipmap/ic_launcher"
+        >
+                ...
+</application>
+```
+
+
+
+
+### 圖示文件，/res/drawable，/res/mipmap
+
+
 
 ![Low pixel vs. high pixel](./images/week2/games_img004.jpg)
 
-### 圖示文件，/res/drawable，/res/mipmap
+![Image asset](./images/week2/imageasset.png)
 
 #### Android 單位/解析度概念
 
