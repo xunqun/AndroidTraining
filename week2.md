@@ -3,10 +3,9 @@
 ## 修改圖示與App名稱
 
 
+![Image asset](./images/week2/imageasset.png)
 
-![](.gitbook/assets/jie-tu-20210104-xia-wu-6.04.19.png)
-
-![](.gitbook/assets/games_img004.jpg)
+![Low pixel vs. high pixel](./images/week2/games_img004.jpg)
 
 ### 圖示文件，/res/drawable，/res/mipmap
 
