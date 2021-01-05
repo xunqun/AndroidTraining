@@ -33,6 +33,7 @@ Android App的圖示設定在 *\[專案\]/app/src/main/AndroidManifest.xml*  當
 
 ![Low pixel vs. high pixel](./images/week2/Games_img004.jpg)
 
+| 綴字 | 像素 | 倍數| 
 |:--|:--|:--|
 | mdpi: | 48px x 48px | (1x)| 
 | hdpi: | 72px x 72px | (1.5x)|
@@ -115,6 +116,12 @@ Android App的名稱設定在 *\[專案\]/app/src/main/AndroidManifest.xml*  當
 
 ![](./images/week2/layout-editor.png)
 
+1. 設計編輯區
+2. 工具欄
+3. View/ViewGroup 選單
+4. 屬性設定
+5. 元件結構
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -136,15 +143,39 @@ Android App的名稱設定在 *\[專案\]/app/src/main/AndroidManifest.xml*  當
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
-🚩 **ConstraintLayout**
+這個排版文件當中使用了一個ConstraintLayout的布局結構(ViewGroup)，ConstraintLayout當中擺放了一個TextView的View元件。
 
 
-### 布局
+### 布局(ViewGroup)
 
-在排版檔案當中，會使用到兩種類型的元素，View和ViewGroup。View是基本元件，如Button、TextView等。ViewGroup則提供不同的佈局結構來容納多個View或是ViewGroup，如LinearLayout、ConstraintLayout等(ViewGroup皆取名為xxxLayout)
+在排版檔案當中，會使用到兩種類型的元素，View和ViewGroup。View是基本元件，如Button、TextView等。ViewGroup是一種特殊的View，用來提供不同的佈局結構來容納多個View或是ViewGroup，如LinearLayout、ConstraintLayout等(ViewGroup皆取名為xxxLayout)
 
 ![](./images/week2/viewgroup_2x.png)
 
+#### LinearLayout
+
+LinearLayout用來將其中的View以垂直或水平的方向來排列，試著將res/layout/activity_main.xml檔案中的ConstraintLayout刪除改成LinearLayout。
+
+![](./images/week2/linearlayout-orientation.png)
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+</LinearLayout>
+```
+
+*android:layout_width="match_parent”*
+
+*android:layout_height="match_parent”*
+
+這兩行宣告了LinearLayout將和上一層的佈局同寬高
+
+*android:orientation="vertical”*
+
+這行則宣告了LinearLayout的排列方式為垂直排列
 
 ### Widget: TextView、Button、ImageView
 
