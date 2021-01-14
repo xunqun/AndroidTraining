@@ -103,8 +103,13 @@ Android App的名稱設定在 *\[專案\]/app/src/main/AndroidManifest.xml*  當
 
 /res/values/ 和drawable或mipmap資料夾一樣，可以在資料夾使用資源資料夾工具，來幫資料夾名稱中加上適合的綴字，已提供合適不同的國家、語言、解析度、旋轉方向等相對應的資源。
 
-試著建立一個用於台灣的繁體中文資源資料夾，建立完成後/res/資料夾當中會出現一個/values-zh-rTW的資料夾，我們可以在裡面新增一個strings.xml來放置中文的字串資源。讓中文使用者裝置中，看到的是中文的App名稱，以及中文內容。
+試著建立一個用於台灣的繁體中文資源資料夾，建立完成後/res/資料夾當中會出現一個/values-zh-rTW的資料夾，我們可以在裡面新增一個strings.xml來放置中文的字串資源。讓裝置設定中文且地區是台灣的使用者裝置中，看到的是中文的App名稱，以及中文內容。
 
 ![](./images/week2/new_res_dir_zh.png)
 
 
+#### 處理畫面翻轉
+
+
+
+![](./images/week2/new_res_dir_zh.png)
